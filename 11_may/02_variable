@@ -1,0 +1,17 @@
+var a=10;
+// var is function scoped and can be redeclared and updated
+
+console.log(a); //global scope 
+
+function printhello(){
+    console.log("Hello the testing world");
+    var a=20;
+    console.log(a); 
+}
+
+if(true){
+    var a=30;
+    console.log(a); //30
+}       
+
+printhello();
